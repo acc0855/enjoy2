@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>shoping.com</title>
+    <style>
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2d2d2d;
+        }
+
+        li.nav-item {
+            float: left;
+        }
+
+        li.nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+        }
+        
+         /* .nav-ite {
+            display: block;
+            color: white;
+          margin-right: 100px;
+           
+            text-decoration: none;
+        } */
+
+        li.nav-item a:hover {
+            background-color: #555;
+        }
+
+        .search-container {
+            float: right;
+        }
+
+        input[type="text"] {
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border: none;
+            font-size: 17px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+        }
+
+        .vertical-line {
+            position: absolute;
+            border-left: 2px solid #000;
+            height: 430%;
+            left: 150px;
+            box-shadow: 3px 0 10px rgba(0, 0, 0, 1);
+        }
+
+        .navbar {
+            box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+
+        .image-container a {
+            text-decoration: none;
+        }
+
+        .img1, .img2, .img3, .img4, .img5 {
+            padding: 25px;
+        }
+
+        .img1 img,
+        .img2 img,
+        .img3 img,
+        .img4 img,
+        .img5 img {
+            height: 80px;
+        }
+
+        .txt1, .txt2, .txt3, .txt4, .txt5 {
+            text-align: center;
+        }
+        
+        .p1 {
+            position: absolute;
+            margin-top: 60px;
+           
+            left: 1190px;
+        }
+        .p2 {
+            position: absolute;
+            margin-top: 60px;
+          
+            left: 890px;
+        }
+        .p3 {
+            position: absolute;
+            margin-top: 60px;
+
+            left: 230px;
+        }
+        .p4 {
+            position: absolute;
+            margin-top: 60px;
+            
+            left: 540px;
+        }
+        .p5 {
+            position: absolute;
+            margin-top: 420px;
+        
+            left: 1190px;
+        }
+        .p6 {
+            position: absolute;
+            margin-top: 420px;
+           
+            left: 890px;
+        }
+        .p7 {
+            position: absolute;
+            margin-top: 420px;
+           
+            left: 540px;
+        }
+        .p8 {
+            position: absolute;
+            margin-top: 420px;
+           
+            left: 200px;
+        }
+        .p9 {
+            position: absolute;
+            margin-top: 800px;
+           
+            left: 1240px;
+        }
+        .p10 {
+            position: absolute;
+            margin-top: 800px;
+          
+            left: 890px;
+        }
+        .p11 {
+            position: absolute;
+            margin-top: 800px;
+           
+            left: 540px;
+        }
+        .p12 {
+            position: absolute;
+            margin-top: 800px;
+           
+            left: 230px;
+        }
+        .p13 {
+            position: absolute;
+            margin-top: 1130px;
+           
+            left: 1240px;
+        }
+        .p14 {
+            position: absolute;
+            margin-top: 1130px;
+           
+            left: 890px;
+        }
+        .p15 {
+            position: absolute;
+            margin-top: 1130px;
+           
+            left: 540px;
+        }
+        .p16 {
+            position: absolute;
+            margin-top: 1130px;
+           
+            left: 230px;
+        }
+        .p17 {
+            position: absolute;
+            margin-top: 1480px;
+           
+            left: 1240px;
+        }
+        .p18 {
+            position: absolute;
+            margin-top: 1480px;
+           
+            left: 890px;
+        }
+        .p19 {
+            position: absolute;
+            margin-top: 1480px;
+           
+            left: 540px;
+        }
+        .p20 {
+            position: absolute;
+            margin-top: 1480px;
+           
+            left: 230px;
+        }
+        .p21 {
+            position: absolute;
+            margin-top: 1840px;
+           
+            left: 1240px;
+        }
+        .p22 {
+            position: absolute;
+            margin-top: 1840px;
+           
+            left: 890px;
+        }
+        .p23 {
+            position: absolute;
+            margin-top: 1840px;
+           
+            left: 540px;
+        }
+        .p24 {
+            position: absolute;
+            margin-top: 1840px;
+           
+            left: 230px;
+        }
+        .p25 {
+            position: absolute;
+            margin-top: 2240px;
+           
+            left: 1240px;
+        }
+        .p26 {
+            position: absolute;
+            margin-top: 2240px;
+           
+            left: 890px;
+        }
+        .p27 {
+            position: absolute;
+            margin-top: 2240px;
+           
+            left: 540px;
+        }
+        .p28 {
+            position: absolute;
+            margin-top: 2240px;
+           
+            left: 230px;
+        }
+        .p29 {
+            position: absolute;
+            margin-top: 2630px;
+           
+            left: 1240px;
+        }
+        .p30 {
+            position: absolute;
+            margin-top:2630px;
+           
+            left: 890px;
+        }
+        .p31 {
+            position: absolute;
+            margin-top: 2630px;
+           
+            left: 540px;
+        }
+        .p32 {
+            position: absolute;
+            margin-top: 2630px;
+           
+            left: 230px;
+        }
+        .p1 , .p2 , .p3 , .p4 ,  .p5, .p6 ,  .p7,  
+        .p8 ,  .p9  ,  .p10  ,  .p11 ,       .p12 ,
+        .p13  ,  .p14 ,  .p15 ,  .p16   ,  .p17  ,  .p18  ,  .p19  ,  .p20  ,  .p21 ,  .p22 ,  .p23 ,  .p24  ,  .p25 ,  .p26 ,  .p27 ,  .p28,  .p29,  .p30,  .p31,  .p32    {
+            position: absolute;
+      
+            color: rgb(0, 0, 0); 
+            
+            font-size: 15px;
+         
+        }
+        .circle-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #b90c0c; /* Gmail's blue color as the border */
+    color: #ef0a0a; /* Text color */
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+
+
+
+.ba {
+            position: absolute;
+            margin-top: 1900px;
+          
+            left: 720px;
+           
+        }
+        .bar {
+            position: absolute;
+            margin-top: 1900px;
+          
+            left: 0px;
+           
+        }
+    </style>
+</head>
+<body>
+    
+  
+   
+
+    <ul class="navbar">
+        <li id="btn1" class="nav-item"><a href="#">Home</a></li>
+        <li id="btn2" class="nav-item"><a href="#">About</a></li>
+        <li id="btn3" class="nav-item"><a href="#">Login</a></li>
+        <li id="btn4" class="nav-item"><a href="#">Contact</a></li>
+        <li id="btn5" class="nav-item"><a href="#">Remove Items</a></li>
+        
+        <!-- <li id="btn5" class="nav-ite"><a href="#">fgg</a></li> -->
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search...">
+            </form>
+            
+        </div>
+    </ul>
+    <button class="circle-button" id="btn00" style="background-color: rgba(0, 0, 0, 0.912) rgb(39, 25, 25);"></button>
+    <div class="vertical-line"></div>
+    <div class="image-container">
+        
+        <div class="p1">
+            <a href="https://www.amazon.it/Coach-T-Shirt-Sport-Camicie-Cappuccio/dp/B09RZY6CDW/ref=sr_1_19_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GFKID4HQHFS9&keywords=shirts%2Band%2Bjeans&qid=1700512339&sprefix=shirts%2Band%2Bjeans%2B%2Caps%2C151&sr=8-19-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&customId=B07P7YGFHL&customizationToken=MC_Assembly_1%23B07P7YGFHL&th=1&psc=1">
+                <img src="https://m.media-amazon.com/images/I/B1FGy+bPeZS._CLa%7C2140%2C2000%7C51TPlmPZ0jL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png" alt="network issue " height="240">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox1"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox1"> 
+
+            <div class="txt1">
+                
+                <pre>
+Coach T-Shirt Sport Coach Felpe
+
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p2">
+            <a href="https://www.amazon.it/CHUNYU-Camicia-Strada-Classico-Abbigliamento/dp/B0CMTP5ZMV/ref=sr_1_9?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GFKID4HQHFS9&keywords=shirts+and+jeans&qid=1700512451&refinements=p_36%3A2493065031&rnid=2492969031&s=apparel&sprefix=shirts+and+jeans+%2Caps%2C151&sr=1-9">
+                <img src="https://m.media-amazon.com/images/I/61vmZnc20pL._AC_SX679_.jpg" alt="network issue" height="240" onerror="this.style.display='none'; document.getElementById('spinner').style.display='block'">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            
+            <label for="myCheckbox2"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox2">
+            <div class="txt2">
+                <pre>
+CHUNYU Camicia di Jeans da
+
+                </pre>
+            </div>
+        </div>
+        
+        <div class="p3">
+            <a href="https://www.amazon.it/TJLSS-Camicetta-Cappotto-Streetwear-Allentate/dp/B0BKPYM9PN/ref=sr_1_13?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GFKID4HQHFS9&keywords=shirts%2Band%2Bjeans&qid=1700512496&refinements=p_36%3A2493065031&rnid=2492969031&s=apparel&sprefix=shirts%2Band%2Bjeans%2B%2Caps%2C151&sr=1-13&th=1">
+                <img src="https://m.media-amazon.com/images/I/61ogCbD7kXL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue" height="240">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox3"></label>
+            <input type="radio" value="section c" name="section" id="myCheckbox3">
+
+            <div class="txt3">
+<pre>
+TJLSS Camicia Denim Donne
+ Jeans Camicetta Cappotto Signore
+</pre>
+            </div>
+        </div>
+        <div class="p4">
+            <a href="https://www.amazon.it/CHUNYU-Camicia-Strada-Classico-Abbigliamento/dp/B0CMTNXWPY/ref=sr_1_19?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GFKID4HQHFS9&keywords=shirts+and+jeans&qid=1700512496&refinements=p_36%3A2493065031&rnid=2492969031&s=apparel&sprefix=shirts+and+jeans+%2Caps%2C151&sr=1-19">
+                <img src="https://m.media-amazon.com/images/I/61t2ClwLuKL._AC_SX679_.jpg" alt="network issue" height="240">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox4"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox4">
+            <div class="txt3">
+                <pre>
+CHUNYU Camicia Di Jeans Da
+ Strada Slim Fit Per Uomo Manica Lunga
+
+            </pre>
+            </div>
+        </div>
+        <div class="p5">
+            <a href="https://www.amazon.it/ORANDESIGNE-Graphic-Vintage-Aesthetic-Streetwear/dp/B0BBM7RDBP/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=4AUJKCNCUXJE&keywords=for+girls+shirts+and+jeans&qid=1700512591&s=apparel&sprefix=fro+girls+shirts+and+jeans%2Cfashion%2C104&sr=1-4">
+                <img src="https://m.media-amazon.com/images/I/61hezQmfVyL._AC_SX522_.jpg" alt="network issue" height="200">
+            </a>
+            
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox5"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox5">
+            <div class="txt3">
+                <pre>
+ORANDESIGNE Top Donna Corto 
+Estivo T-Shirt Donna Manica
+            </pre>
+            </div>
+        </div>
+        <div class="p6">
+            <a href="https://www.amazon.it/Lee-Dungarees-Skinny-Straight-Jeans/dp/B005GMPZ4I/ref=sr_1_13?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3VUVZF7M2G42H&keywords=jeans+for+boys+%5C&qid=1700512784&refinements=p_36%3A2493063031&rnid=2492969031&s=apparel&sprefix=jeans+for+boys+%2Cfashion%2C134&sr=1-13">
+                <img src="https://m.media-amazon.com/images/I/91u48Lgk4HL._AC_SY606_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox6"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox6">
+            <div class="txt3">
+                <pre>
+Lee Big Boys' Dungarees Ski
+nny Straight Leg Jeans
+                
+            </pre>
+            </div>
+        </div>
+        <div class="p7">
+            <a href="https://www.amazon.it/Pinko-Barbra-PJ839-F92_Blu-Giacca-Marinara/dp/B09RQVT691/ref=sr_1_15?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3VUVZF7M2G42H&keywords=jeans+for+boys+%5C&qid=1700512845&refinements=p_36%3A2493063031&rnid=2492969031&s=apparel&sprefix=jeans+for+boys+%2Cfashion%2C134&sr=1-15">
+                <img src="https://m.media-amazon.com/images/I/81JwOdT-pVL._AC_SX466_.jpg" height="240">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox7"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox7">
+            <div class="txt3">
+                <pre>
+Pinko Jeans Donna
+            </pre>
+            </div>
+        </div>
+        <div class="p8">
+            <a href="https://www.amazon.it/Levis-Perfect-T-Shirt-Caviar-Small/dp/B07S2G42QH/ref=sr_1_34_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=XWJ0AM9MEQRF&keywords=t-shirt%2Bfor%2Bwomen&qid=1700512985&s=apparel&sprefix=t-shirt%2Bfor%2Bwomen%2Cfashion%2C162&sr=1-34-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&psc=1">
+                <img src="https://m.media-amazon.com/images/I/71EyAG1wkdL._AC_SX466_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox8"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox8">
+            <div class="txt3">
+                <pre>
+ Levi's Perfect V-Neck 
+ Maglietta Donna
+            </pre>
+            </div>
+        </div>
+        <div class="p9">
+            <a href="https://www.amazon.it/Gifts-Vintage-Limited-Birthday-Maglietta/dp/B08TT3SSKV/ref=sr_1_20?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3Q89RSQIOCFV3&keywords=t-shirt+for+18+year+old+girls&qid=1700513336&s=apparel&sprefix=t-shirt+for+18+year+old+girls%2Cfashion%2C98&sr=1-20">
+                <img src="https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7CA1RQAdVnNoL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png" height="260">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox9"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox9">
+            <div class="txt3">
+                <pre>
+18 Year Old Gifts Vintage 2003
+Limited Edition 18th Birthday Maglietta
+            </pre>
+            </div>
+        </div>
+        <div class="p10">
+            <a href="https://www.amazon.it/A2Z-Kids-Elastico-Progettista-Ricamate/dp/B07Z55G9F3/ref=sr_1_30?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2A5XWM5Q7KATJ&keywords=girls+20+years+old+jeans&qid=1700513522&refinements=p_36%3A2493061031&rnid=2492969031&s=apparel&sprefix=girls+20+years+old+jeans%2Cfashion%2C103&sr=1-30">
+                <img src="https://m.media-amazon.com/images/I/61y0bWea2eL._AC_UL480_FMwebp_QL65_.jpg" height="250">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox10"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox10">
+            <div class="txt3">
+                <pre>
+A2Z 4 Kids Bambini 
+Ragazze Elastico Jeans
+            </pre>
+            </div>
+        </div>
+        <div class="p11">
+            <a href="https://www.amazon.it/ORANDESIGNE-Pantaloni-Boyfriend-Streetwear-Albicocca/dp/B0C27XJ5XV/ref=sr_1_10?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=19ESGSHBT43JG&keywords=jeans+for+girls&qid=1700513616&sprefix=jeans+for+girls+%2Caps%2C133&sr=8-10">
+                <img src="https://m.media-amazon.com/images/I/51vxk+DRiDL._AC_SY606_.jpg" height="260">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox11"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox11">
+            <div class="txt3">
+                <pre>
+ORANDESIGNE Jeans Donna Vita
+Bassa Gamba Dritta Ampio
+            </pre>
+            </div>
+        </div>
+        <div class="p12">
+            <a href="https://www.amazon.it/monopetto-pulsante-Business-Performance-pantaloni/dp/B0B49TSND1/ref=sr_1_33_sspa?crid=1L0UUUGGF3W1X&keywords=wedding%2Bsuit%2Bfor%2Bboys&qid=1700513702&sprefix=boys%2B%2Bweddi%2Caps%2C122&sr=8-33-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&psc=1">
+                <img src="https://m.media-amazon.com/images/I/61ZGXwSiTbL._AC_SX679_.jpg" height="260">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox12"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox12">
+            <div class="txt3">
+                <pre>
+Abiti da uomo 3 pezzi Set
+slim fit monopetto un
+            </pre>
+            </div>
+        </div>
+        <div class="p13">
+            <a href="https://www.amazon.it/ETHNIC-EMPORIUM-Designer-Traditional-Lehenga/dp/B07H6HMY6L/ref=sr_1_7?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1U2X0ZHKGJE68&keywords=indian+wedding+suit+for+women&qid=1700513812&refinements=p_36%3A2493064031&rnid=2492969031&s=apparel&sprefix=indian+weddingg+suit+for+women+%2Caps%2C100&sr=1-7">
+                <img src="https://m.media-amazon.com/images/I/61Pc0D9J0dL._AC_SX679_.jpg" height="260">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox13"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox13">
+            <div class="txt3">
+                <pre>
+ETHNIC EMPORIUM Indian Designer 
+Traditional Bride Lehenga Choli
+            </pre>
+            </div>
+        </div>
+        <div class="p14">
+            <a href="https://www.amazon.it/Embroidery-Bollywood-Designer-Function-Festival/dp/B08KZYSWWW/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1EQ88BBX3CU27&keywords=indian+suit+for+women&qid=1700513907&sprefix=indian+suit+for+women%2Caps%2C212&sr=8-1">
+                <img src="https://m.media-amazon.com/images/I/61PcmtsVfkL._AC_SX679_.jpg" height="260">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox14"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox14">
+            <div class="txt3">
+                <pre>
+Step N Shop Women
+ Heavy Net Sharara
+            </pre>
+            </div>
+            
+        </div>
+        <div class="p15">
+            <a href="https://www.amazon.it/INMONARCH-lusso-designer-Crema-Jodhpuri/dp/B00LDJPV74/ref=sr_1_8?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=25W9WA3BH6VKG&keywords=indian+suit+for+men&qid=1700514055&refinements=p_36%3A2493065031&rnid=2492969031&s=apparel&sprefix=indian+suit+for+man%2Caps%2C108&sr=1-8">
+                <img src="https://m.media-amazon.com/images/I/61CUMZCW+TL._AC_SY606_.jpg" height="260">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox15"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox15">
+            <div class="txt3">
+                <pre>
+INMONARCH da uomo di lusso
+ designer Crema Jodhpuri Suit
+            </pre>
+           
+            </div>
+
+        </div>
+        
+           
+        
+        <div class="p16">
+            <a href="https://www.amazon.it/Boland-87151-Abito-Glitter-Paillettes/dp/B00A6JAKW8/ref=sr_1_7?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=S9BYVFPNDTL4&keywords=party%2Bdress%2Bfor%2Bgirls%2Babove%2B18&qid=1700514226&s=apparel&sprefix=party%2Bdress%2Bfor%2Bgirls%2Babove%2B18%2Cfashion%2C114&sr=1-7&th=1">
+                <img src="https://m.media-amazon.com/images/I/61PFmtK0ZgL._AC_SY450_.jpg" height="260">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox16"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox16">
+            <div class="txt3">
+                <pre>
+Boland 87151 - Abito in paillettes 
+Dazzle England, taglia M, mini
+            </pre>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="p17">
+            <a href="https://www.amazon.it/Kate-Kasin-Vestito-Bambine-Ragazze/dp/B0BL988J64/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2PAUB8YS0J7N0&keywords=wedding+dress+for+girls+above+18&qid=1700514347&refinements=p_36%3A2493061031&rnid=2492969031&s=apparel&sprefix=weding+dress+for+girls+above+18%2Cfashion%2C101&sr=1-3">
+                <img src="https://m.media-amazon.com/images/I/715laxduEHL._AC_SX466_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox17"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox17"> 
+
+            <div class="txt1">
+                
+                <pre>
+Kate Kasin Vestito Elegante
+ Bambina Ragazza Senza
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p18">
+            <a href="https://www.amazon.it/MeeQee-Maniche-Backless-Pacchetto-Elegante/dp/B0CD9RGYH4/ref=sr_1_3_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9Q3S02KZE03R&keywords=party%2Bdress%2Bfor%2Bwomen&qid=1700514422&s=apparel&sprefix=party%2Bdress%2Bfor%2Bwomen%2Cfashion%2C147&sr=1-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1">
+                <img src="https://m.media-amazon.com/images/I/41HmIqrkUUL._AC_SX569_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox18"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox18"> 
+
+            <div class="txt1">
+                
+                <pre>
+MeeQee Abito da Donna Maniche
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p19">
+            <a href="https://www.amazon.it/Allthemen-Abito-Uomo-Bianco-M/dp/B07S16LVX9/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3W4ZWH62IZ00R&keywords=party+dress+for+man&qid=1700514510&s=apparel&sprefix=party+dress+for+man%2Cfashion%2C105&sr=1-4">
+                <img src="https://m.media-amazon.com/images/I/61FLyONVonL._AC_SX679_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox19"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox19"> 
+
+            <div class="txt1">
+                
+                <pre>
+Allthemen Abito da Uomo in 2 
+Pezzi Slim Fit
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p20">
+            <a href="https://www.amazon.it/monopetto-pulsante-Business-Performance-pantaloni/dp/B0B49TSND1/ref=sr_1_19_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3W4ZWH62IZ00R&keywords=party%2Bdress%2Bfor%2Bman&qid=1700514557&s=apparel&sprefix=party%2Bdress%2Bfor%2Bman%2Cfashion%2C105&sr=1-19-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&psc=1">
+                <img src="https://m.media-amazon.com/images/I/61ZGXwSiTbL._AC_SX679_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox20"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox20"> 
+
+            <div class="txt1">
+                
+                <pre>
+Abiti da uomo 3 pezzi Set slim
+ fit monopetto un
+                </pre>
+            </div>
+          <!-- continuo from next line  -->
+<!-- ////////////////////////////////////////////////////////////////////////////x////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        </div>
+        <div class="p21">
+            <a href="https://www.amazon.it/ZZOU-Wedding-Waistcoat-Business-Vintage/dp/B08SM25ZVP/ref=sr_1_27?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3W4ZWH62IZ00R&keywords=party+dress+for+man&qid=1700514557&s=apparel&sprefix=party+dress+for+man%2Cfashion%2C105&sr=1-27">
+                <img src="https://m.media-amazon.com/images/I/61l2c0CVWnL._AC_SX679_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox21"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox21"> 
+
+            <div class="txt1">
+                
+                <pre>
+ZZOU Men's Slim Fit Wedding 
+Waistcoat Casual
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p22">
+            <a href="https://www.amazon.it/NOAGENJT-Strappati-Pantaloni-Eleganti-Caviglia/dp/B0C38N5ZJ2/ref=sr_1_24?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2RZEYCINZP6U7&keywords=tight+jeans+for+18+above+girls&qid=1700514708&s=apparel&sprefix=tight+jeans+for+18+above+girls+%2Cfashion%2C107&sr=1-24">
+                <img src="https://m.media-amazon.com/images/I/61iCVF1r+jL._AC_SX679_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox22"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox22"> 
+
+            <div class="txt1">
+                
+                <pre>
+NOAGENJT Pantaloni 
+Estivi da Donna Pants
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p23">
+            <a href="https://www.amazon.it/NOAGENJT-Strappati-Pantaloni-Invernali-Eleganti/dp/B0C38LZF5B/ref=sr_1_24?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2RZEYCINZP6U7&keywords=tight+jeans+for+18+above+girls&qid=1700514760&s=apparel&sprefix=tight+jeans+for+18+above+girls+%2Cfashion%2C107&sr=1-24">
+                <img src="https://m.media-amazon.com/images/I/51+Bqq7NAvL._AC_SX679_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox23"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox23"> 
+
+            <div class="txt1">
+                
+                <pre>
+ NOAGENJT Comodi Pantaloni da
+  Donna Women
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p24">
+            <a href="https://www.amazon.it/Pantaloni-lunghi-casual-Straight-colore/dp/B0BJPMHPBF/ref=sr_1_36_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2RZEYCINZP6U7&keywords=tight%2Bjeans%2Bfor%2B18%2Babove%2Bgirls&qid=1700514760&s=apparel&sprefix=tight%2Bjeans%2Bfor%2B18%2Babove%2Bgirls%2B%2Cfashion%2C107&sr=1-36-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&psc=1">
+                <img src="https://m.media-amazon.com/images/I/61XhBghv9cL._AC_SX679_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox24"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox24"> 
+
+            <div class="txt1">
+                
+                <pre>
+Pantaloni lunghi casual da
+donna Baggy Straight Wide Leg
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p25">
+            <a href="https://www.amazon.it/Ever-Pretty-Damigella-Elegante-Lunghezza-Orchidea/dp/B01ICQ4MN4/ref=sr_1_26?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9Q3S02KZE03R&keywords=party%2Bdress%2Bfor%2Bwomen&qid=1700514504&s=apparel&sprefix=party%2Bdress%2Bfor%2Bwomen%2Cfashion%2C147&sr=1-26&th=1">
+                <img src="https://m.media-amazon.com/images/I/61xKFzSM36L._AC_SY606_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox33"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox33"> 
+
+            <div class="txt1">
+                
+                <pre>
+Ever-Pretty Vestito da
+ Cerimonia Donna
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p26">
+            <a href="https://www.amazon.it/Sharara-Designer-Pakistano-Abbigliamento-farfalla/dp/B08KTHZFDH/ref=sr_1_11?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2A9MNIWD4F8BK&keywords=indian%2Bsuit&qid=1700515838&s=apparel&sprefix=indian%2Bsuit%2Cfashion%2C134&sr=1-11&th=1&psc=1">
+                <img src="https://m.media-amazon.com/images/I/71WBNmNASqL._AC_SX679_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox34"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox34"> 
+
+            <div class="txt1">
+                
+                <pre>
+JIVRAJ FASHION Etnico Bella 
+Sharara Palazzo Salwar Kameez
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p27">
+            <a href="https://www.amazon.it/TaissBocco-Womens-Dress-Halloween-Dresses/dp/B0CKXRL7FB/ref=sr_1_31?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9Q3S02KZE03R&keywords=party+dress+for+women&qid=1700514504&s=apparel&sprefix=party+dress+for+women%2Cfashion%2C147&sr=1-31">
+                <img src="https://m.media-amazon.com/images/I/61T02+UJrdL._AC_SY741_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox35"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox35"> 
+
+            <div class="txt1">
+                
+                <pre>
+Marca: TaissBocco
+  TaissBocco Women's Halter V
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p28">
+            <a href="https://www.amazon.it/Ever-Pretty-Vestito-Scollo-Maniche-Indietro/dp/B07YBXY99B/ref=sr_1_38?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9Q3S02KZE03R&keywords=party%2Bdress%2Bfor%2Bwomen&qid=1700514504&s=apparel&sprefix=party%2Bdress%2Bfor%2Bwomen%2Cfashion%2C147&sr=1-38&th=1">
+                <img src="https://m.media-amazon.com/images/I/71ybNoF5P6L._AC_SY606_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox36"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox36"> 
+
+            <div class="txt1">
+                
+                <pre>
+Visita lo Store di Ever-Pretty
+ Ever-Pretty Vestiti da Sera
+  Elegante Stile Impero
+                </pre>
+            </div>
+            
+        </div>
+        <div class="p29">
+            <a href="https://www.amazon.it/Huyghdfb-Sleeveless-Spaghetti-Bodycon-Streetwear/dp/B0C65DGQW7/ref=sr_1_41?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9Q3S02KZE03R&keywords=party+dress+for+women&qid=1700514504&s=apparel&sprefix=party+dress+for+women%2Cfashion%2C147&sr=1-41">
+                <img src="https://m.media-amazon.com/images/I/5178tZ2DGWL._AC_SX679_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox37"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox37"> 
+
+            <div class="txt1">
+                
+                <pre>
+Huyghdfb Women's
+                </pre>
+            </div>
+            
+        </div>
+        <div class="p30">
+            <a href="https://www.amazon.it/Allegra-colletto-trapezio-maglia-trasparente/dp/B09XCR8SPM/ref=sr_1_8?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3G1BM9WPZ3WCN&keywords=frock%2Bdress%2Bfor%2Bwomen&qid=1700515366&s=apparel&sprefix=frok%2Bdress%2Bfor%2Bwomen%2Cfashion%2C109&sr=1-8&th=1">
+                <img src="https://m.media-amazon.com/images/I/61vQ0KDEcxL._AC_SY606_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox38"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox38"> 
+
+            <div class="txt1">
+                
+                <pre>
+Allegra K Abito da donna Peter 
+Pan con colletto a
+                </pre>
+            </div>
+            
+        </div>
+        <div class="p31">
+            <a href="https://www.amazon.it/Allegra-Abito-maniche-lunghe-chiffon/dp/B0B4VLKJL4/ref=sr_1_29?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3G1BM9WPZ3WCN&keywords=frock+dress+for+women&qid=1700515366&s=apparel&sprefix=frok+dress+for+women%2Cfashion%2C109&sr=1-29">
+                <img src="https://m.media-amazon.com/images/I/71TDkkoI-wL._AC_SY606_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox39"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox39"> 
+
+            <div class="txt1">
+                
+                <pre>
+Allegra K Abito da donna 
+a maniche
+                </pre>
+            </div>
+            
+        </div>
+        <div class="p32">
+            <a href="https://www.amazon.it/dupatta-tradizionale-indiano-Designer-Anarkali/dp/B08RP455ZJ/ref=sr_1_9?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2A9MNIWD4F8BK&keywords=indian+suit&qid=1700515702&s=apparel&sprefix=indian+suit%2Cfashion%2C134&sr=1-9">
+                <img src="https://m.media-amazon.com/images/I/71VP8mGbrEL._AC_SY606_.jpg" alt="network issue " height="280">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox40"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox40"> 
+
+            <div class="txt1">
+                
+                <pre>
+kurta per le donne
+ con dupatta
+                </pre>
+            </div>
+            
+        </div>
+    
+
+        <div class="img1">
+            <a href="file:///C:/Users/08-1infO22-17/Desktop/market/phone.html">
+                <img src="mobile-phone_402384.png" alt="network issue">
+                
+            </a>
+            <hr>
+            <div class="txt1">
+                <p>Phones</p>
+            </div>
+        </div>
+        <div class="img2">
+            <a href="https://youtube.com">
+                <img src="laptop_7848697.png" alt="network issue">
+                
+            </a>
+            <hr>
+            <div class="txt2">
+                <p>Laptops</p>
+            </div>
+        </div>
+        <div class="img3">
+            <a href="https://youtube.com">
+                <img src="football-shirt_4691093.png" alt="network issue">
+                
+            </a>
+<hr>
+            <div class="txt3">
+                <p>Cloths</p>
+            </div>
+        </div>
+        <div class="img4">
+            <a href="https://youtube.com">
+                <img src="ipod_2223357.png" alt="network issue">
+                
+            </a>
+<hr>
+            <div class="txt4">
+                <p>Tabs</p>
+            </div>
+        </div>
+        <div class="img5">
+            <a href="https://youtube.com">
+                <img src="headphone_1073691.png" alt="network issue">
+                
+            </a>
+<hr>
+            <div class="txt5">
+                <p>Headphones</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="img5">
+        <br>
+        
+
+        <h3>Save Items</h3>
+        </a>
+        
+        <div class="txt5">
+            <p></p>
+                                
+        </div>
+    </div>
+</div>
+<div class="bar">
+    <img src="Screenshot 2023-11-18 191858.png" alt="network issue " height="150" width="1550">
+<div class="txt1">
+</div>
+</div>
+<div class="ba">
+<img src="Screenshot 2023-11-18 130423.png" alt="network issue " height="150" width="300">
+<div class="txt1">
+</div>
+</div>
+    
+    <script>
+        let a = document.getElementById("btn1");
+        let b = document.getElementById("btn2");
+        let c = document.getElementById("btn3");
+        let d = document.getElementById("btn00");
+        let dd = document.getElementById("btn5");
+        const e = document.getElementById("myCheckbox1");
+        const f = document.getElementById("myCheckbox2");
+        const g = document.getElementById("myCheckbox3");
+        const  h= document.getElementById("myCheckbox4");
+        const  j= document.getElementById("myCheckbox5");
+        const l = document.getElementById("myCheckbox6");
+        const m = document.getElementById("myCheckbox7");
+        const n = document.getElementById("myCheckbox8");
+        const o = document.getElementById("myCheckbox9");
+        const p = document.getElementById("myCheckbox10");
+        const pp = document.getElementById("myCheckbox11");
+        const q = document.getElementById("myCheckbox12");
+        const  r= document.getElementById("myCheckbox13");
+        const s = document.getElementById("myCheckbox14");
+        const t = document.getElementById("myCheckbox15");
+        const  y = document.getElementById("myCheckbox16");
+        const  A= document.getElementById("myCheckbox17");
+        const B = document.getElementById("myCheckbox18");
+        const C = document.getElementById("myCheckbox19");
+        const  D = document.getElementById("myCheckbox20");
+        const  AA= document.getElementById("myCheckbox21");
+        const BB = document.getElementById("myCheckbox22");
+        const CC = document.getElementById("myCheckbox23");
+        const  DD = document.getElementById("myCheckbox24");
+        const  AAA= document.getElementById("myCheckbox25");
+        const BBB = document.getElementById("myCheckbox26");
+        const CCC = document.getElementById("myCheckbox27");
+        const  DDD = document.getElementById("myCheckbox28");
+        const  AAAA= document.getElementById("myCheckbox29");
+        const BBBB = document.getElementById("myCheckbox30");
+        const CCCC = document.getElementById("myCheckbox31");
+        const  DDDD = document.getElementById("myCheckbox32");
+        const  a1 = document.getElementById("myCheckbox33");
+        const  a2= document.getElementById("myCheckbox34");
+        const  a3 = document.getElementById("myCheckbox35");
+        const  a4 = document.getElementById("myCheckbox36");
+        const  a5 = document.getElementById("myCheckbox37");
+        const  a6= document.getElementById("myCheckbox38");
+        const  a7 = document.getElementById("myCheckbox39");
+        const  a8 = document.getElementById("myCheckbox40");
+        const  er = document.getElementById("h11");
+        let container = document.createElement("div");
+        document.body.appendChild(container);
+
+        function LoadImages(link) {
+    let img = new Image(100, 100);
+    img.src = link;
+    img.style.border = "8px solid orange";
+    img.style.borderRadius = "8px";
+    container.appendChild(img);
+}
+container.style.display = "flex";
+container.style.flexDirection = "column";
+window.onload = function () {
+    let storedImages = localStorage.getItem('userImages');
+    if (storedImages) {
+        let images = storedImages.split(',');
+        images.forEach(function (imageLink) {
+            LoadImages(imageLink);
+        });
+    }
+};
+///////////////////////////////////////////////////////////////
+btn5.addEventListener("click", function () {
+   // remove button 
+   localStorage.removeItem('userImages');
+
+});
+///////////////////////////////////////////////////////////////
+e.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/B1FGy+bPeZS._CLa%7C2140%2C2000%7C51TPlmPZ0jL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+
+pp.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/51vxk+DRiDL._AC_SY606_.jpg"
+    if (link) {
+        // Sto
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the ne
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+f.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61vmZnc20pL._AC_SX679_.jpg"
+    if (link) {
+        // Sto
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the ne
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+g.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61ogCbD7kXL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        // Sto
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the ne
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+h.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61t2ClwLuKL._AC_SX679_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+j.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/61hezQmfVyL._AC_SX522_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+l.addEventListener("click", function () {
+    let link = "https://m.media-amazon.com/images/I/91u48Lgk4HL._AC_SY606_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+    
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+m.addEventListener("click", function () {
+    let link = "https://m.media-amazon.com/images/I/81JwOdT-pVL._AC_SX466_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+n.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/71EyAG1wkdL._AC_SX466_.jpg"
+    if (link) {
+ 
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+o.addEventListener("click", function () {
+   link = "https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7CA1RQAdVnNoL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+p.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/61y0bWea2eL._AC_UL480_FMwebp_QL65_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+q.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/61ZGXwSiTbL._AC_SX679_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+r.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/61Pc0D9J0dL._AC_SX679_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+s.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/61PcmtsVfkL._AC_SX679_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+t.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/61CUMZCW+TL._AC_SY606_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+y.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/61PFmtK0ZgL._AC_SY450_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+A.addEventListener("click", function () {
+     link = "https://m.media-amazon.com/images/I/715laxduEHL._AC_SX466_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+B.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/41HmIqrkUUL._AC_SX569_.jpg"
+       if (link) {
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+ });
+C.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/61FLyONVonL._AC_SX679_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+D.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/61ZGXwSiTbL._AC_SX679_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+        
+        const storedValue = localStorage.getItem('userEmail');
+        if (storedValue) {
+            d.innerHTML = storedValue;
+        }
+     
+        c.addEventListener('click', () => {
+            qqq = prompt("Enter your Gmail");
+            localStorage.setItem('sec' , qqq);
+            if (qqq) {
+                let aa = qqq[0];
+                d.innerHTML = aa;
+
+               
+                localStorage.setItem('userEmail', aa);
+               
+                // Example: Validate an email address
+}
+
+        });
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                                             // SECURITY OF WEBSITE
+
+    let username = localStorage.getItem('sec');
+
+if (username === "" || username === "" || username === "vaffanculo" || username === "porcaputtana" || username === "porca" || username === "porcatroia" || username === "porcamiseria"
+    || username === "mortodifiga" || username === "chepalle" || username === "madonnasanta" || username === "madonna" || username === "stronzo" || username === "figliodiputtana" || username === ""
+    || username === "rincoglionito" || username === "rompicoglioni" || username === "dio porco" || username === "cagacazzo" || username === "leccaculo" || username === "leccapiedi" || username === "lecchino"
+    || username === "Pezzodimerda"
+    || username === "cagacazzo"
+    || username === "coglione") {
+
+    window.location.href = "https://www.europol.europa.eu/stopchildabuse";
+
+
+const data = 'HEY BRO  PLEASE DONT ABOUSE THIS IS NOT LEGAL THIS IS OUT OF RULES IF U WANTS STAY ON MY SITE PLEASE DONT ABOUSE YOU  BLOCD FROM MY SITE I A M SORRY ! WRITE NOW IF U WANTS TO REBACIN SITE NOT POSSIBLE SEND ME  GMAIL THEN I SE WHATS CAN I DO PLEASE DO NOT ABOUSE RETURN EVER';
+
+
+
+const blob = new Blob([data], { type: 'text/plain' });
+
+const downloadLink = document.createElement('a');
+downloadLink.download = 'WARNING.txt';
+downloadLink.href = window.URL.createObjectURL(blob);
+downloadLink.click();
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        a.addEventListener('click', () => {
+            window.location.href = "https://acc0855.github.io/codersss/";
+        });
+        b.addEventListener('click', () => {
+            window.location.href = "page2";
+        });
+
+        
+        const searchForm = document.getElementById("search-form");
+        const searchInput = document.getElementById("search-input");
+
+        searchForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const searchQuery = searchInput.value;
+           
+            window.location.href = `/search?query=${searchQuery}`;
+        });
+
+       
+AA.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/61l2c0CVWnL._AC_SX679_.jpg"
+    if (link) {
+     
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+          localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+BB.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/61iCVF1r+jL._AC_SX679_.jpg"
+    if (link) {
+     
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+          localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+CC.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/51+Bqq7NAvL._AC_SX679_.jpg" 
+    if (link) {
+      
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+DD.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/61XhBghv9cL._AC_SX679_.jpg" 
+    if (link) {
+       
+        localStorage.setItem('user', link);
+
+        
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+
+    }
+});
+
+
+a1.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61xKFzSM36L._AC_SY606_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+ a2.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71WBNmNASqL._AC_SX679_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+ a3.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61T02+UJrdL._AC_SY741_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+   a4.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71ybNoF5P6L._AC_SY606_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+a5.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/5178tZ2DGWL._AC_SX679_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+a6.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61vQ0KDEcxL._AC_SY606_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+a7.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71TDkkoI-wL._AC_SY606_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+a8.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71VP8mGbrEL._AC_SY606_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+    </script>
+    
+</body>
+</html>
